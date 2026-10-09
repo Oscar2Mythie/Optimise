@@ -11,8 +11,8 @@
 int main(int argc, char* argv[]){
     // Initialization
     float timer = 1;
-    int screenWidth = 2560;
-    int screenHeight = 1200;
+    int screenWidth = 1880;
+    int screenHeight = 1080;
     Vector2 ScreenSize = {screenWidth , screenHeight};
     InitWindow(ScreenSize.x,ScreenSize.y, "CDDS Optimization - sample project");
     //SetTargetFPS(10);
@@ -46,7 +46,7 @@ int main(int argc, char* argv[]){
     //----------------------------------create some critters----------------------------------------------------
 
     //Critter* crittersprt[1000]; // index 0 is pointer?
-    const int CRITTER_COUNT = 200;
+    const int CRITTER_COUNT = 20000;
     Critter* critters = new Critter[CRITTER_COUNT];
     //Critter* Dead_Criiter = new Critter[CRITTER_COUNT];
     std::stack<Critter*> DeadStack;

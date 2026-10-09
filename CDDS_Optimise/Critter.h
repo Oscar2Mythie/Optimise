@@ -43,7 +43,9 @@ public:
 	bool IsDirty() { return m_isDirty; }
 	void SetDirty() { m_isDirty = true; }
 
-	bool IsDead() { return m_isLoaded == false; }
+	bool IsDead() { return m_isLoaded == false;}
+
+	bool IsLoaded() { return m_isLoaded; }
 
 
 

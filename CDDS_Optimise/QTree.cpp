@@ -316,8 +316,11 @@ void QTree::Critter_Update(const int MAX_VELOCITY, float delta_frameTime)
 
 	if (Critters_DP == nullptr) 
 	{ 
-		paranet_Root->QTree_childen[childen_regin_number] = nullptr;
-		delete this; 
+		if (paranet_Root != nullptr) 
+		{
+			paranet_Root->QTree_childen[childen_regin_number] = nullptr;
+			delete this;
+		}
 	}
 
 	//for (int i = 0; i < QTree_Capacity; i++) {
